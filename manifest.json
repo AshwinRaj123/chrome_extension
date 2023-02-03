@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "SkipAd",
+    "description": "Skip Youtube Ads",
+    "version": "1.0",
+    "icons": {
+      "16": "images/icon1-16.png",
+       "48": "images/icon1-48.png",
+      "128": "images/icon1-128.png"
+    },
+    "page_action":{
+        "default_icon":{
+            "16":"images/icon2-16.png",
+            "48":"images/icon2-48.png",
+            "128":"images/icon2-128.png"
+        }
+    },
+    "permissions": [
+      "tabs"
+    ],
+    "content_scripts":[
+     {
+      "matches":["<all_urls>"],
+       "js":["script.js"],
+      "css":["style.css"]
+      }
+
+    ]
+  }
